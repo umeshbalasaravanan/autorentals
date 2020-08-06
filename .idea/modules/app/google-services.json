@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "567193463615",
+    "firebase_url": "https://autorentals-d4b6c.firebaseio.com",
+    "project_id": "autorentals-d4b6c",
+    "storage_bucket": "autorentals-d4b6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567193463615:android:96771917daa8a9a917c18a",
+        "android_client_info": {
+          "package_name": "edu.udayton.autorentals"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567193463615-r67etm9dkj66ebkub29b05t16348tavd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.udayton.autorentals",
+            "certificate_hash": "965d7017ff3a69c9da2c02fd1cafc5d43adf85f7"
+          }
+        },
+        {
+          "client_id": "567193463615-ar4iie1vtojluqt13n03cikmigt4h7kr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOVpbzjojsHegGGJXdLM2tN2nqW9haU30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567193463615-ar4iie1vtojluqt13n03cikmigt4h7kr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

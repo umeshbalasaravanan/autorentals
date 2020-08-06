@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Auto Rentals</string>
+    <string name="titleTextVal">Auto Rentals</string>
+    <string name="CoverImageContentDesc">Auto Rental image</string>
+    <string name="startButtonVal">let\'s start</string>
+    <string name="sloganTextVal">rent cars, trucks, motorbikes and much more...</string>
+    <string name="loginTextVal">login here </string>
+    <string name="emailInputType">enter email</string>
+    <string name="passowordHint">enter password</string>
+    <string name="registerDirVal">"Don't have an account ? "</string>
+    <string name="creationTextVal"><u>create one</u></string>
+    <string name="registerTitleTextVal">Create a new auto rentals account</string>
+    <string name="emailTextVal">email address</string>
+    <string name="confirmEmailTextVal">confirm email address</string>
+    <string name="passwordTextVal">enter password</string>
+    <string name="registerTextVal">register</string>
+    <string name="cancelTextVal">cancel</string>
+    <string name="firstNameTextVal">first name</string>
+    <string name="lastNameTextVal">last name</string>
+    <string name="confirmPasswordTextVal">confirm password</string>
+    <string name="selectionCommentTextVal">"Please select the vehicle you want to rent "</string>
+    <string name="midSizeCarTextVal">Mid Size Car</string>
+    <string name="tillAugTextView">till august</string>
+    <string name="fullSizeCarTextView">Full size car</string>
+    <string name="premiumCarTextView">Premium Car</string>
+    <string name="luxuryCarsTextView">Luxury Car</string>
+    <string name="standardBikeTextView">Standard Bike</string>
+    <string name="sportBikeTextView">Sport Bike</string>
+    <string name="dirtBikeTextView">Dirt Bike</string>
+    <string name="semiTrailerTruckTextVal">Semi trailer Truck</string>
+    <string name="flatBedTruckTextVal">Flat bed Truck</string>
+    <string name="strightTruckTextVal">Straight Truck</string>
+    <string name="hybridBikeTextVal">Hybrid/Comfort Bike</string>
+    <string name="roadBikeTextVal">Road Bike</string>
+    <string name="timeTrailBiikeVal">Time-rail Bike</string>
+    <string name="payNowButtonVal">pay now</string>
+    <string name="payLaterButtonVal">pay later</string>
+    <string name="cruiserBikeTextVal">Cruiser Bike</string>
+
+    <string-array name="autoTypes">
+        <item>cars</item>
+        <item>trucks</item>
+        <item>motorbikes</item>
+        <item>bikes</item>
+    </string-array>
+    <string-array name="noOfDays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleTextSize">46sp</dimen>
+    <dimen name="margin5dp">5dp</dimen>
+    <dimen name="buttonTextSize">26sp</dimen>
+    <dimen name="sloganTextVal">16sp</dimen>
+    <dimen name="margin20dp">20dp</dimen>
+    <dimen name="loginTextSize">20sp</dimen>
+    <dimen name="subTitleTextSize">26sp</dimen>
+</resources>
