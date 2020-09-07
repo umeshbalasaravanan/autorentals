@@ -12,14 +12,17 @@ import android.widget.LinearLayout;
 
 public class CartypesActivity extends AppCompatActivity {
 
-    private Boolean currState = false;
-
+    private Boolean currState1= false;
+    private Boolean currState2 = false;
+    private Boolean currState3 = false;
+    private Boolean currState4 = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cartypes);
 
+        //getting the control of midSizeCarLayout, when user clicks at any of the places, it will direct the user to CheckOutActivity page
         LinearLayout midSizeCarLayout = (LinearLayout)findViewById(R.id.midSizeCarLinearLayout);
         View.OnClickListener midSizeCarLayoutListener = new View.OnClickListener() {
             @Override
@@ -35,21 +38,23 @@ public class CartypesActivity extends AppCompatActivity {
         };
         midSizeCarLayout.setOnClickListener(midSizeCarLayoutListener);
 
+        //user can click this image to make this item their favourite
         final ImageView midSizeCarFavouriteView = (ImageView)findViewById(R.id.midSizeFavouriteView);
         midSizeCarFavouriteView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                if(currState){
+                if(currState1){
                     midSizeCarFavouriteView.setImageResource(R.drawable.ic_baseline_favorite_border_24);
-                    currState = false;
+                    currState1 = false;
                 }else{
                     midSizeCarFavouriteView.setImageResource(R.drawable.ic_baseline_favorite_24_red);
-                    currState = true;
+                    currState1 = true;
                 }
             }
         });
 
+        //getting the control of fullSizeCarLayout, when user clicks at any of the places, it will direct the user to CheckOutActivity page
         LinearLayout fullSizeCarLayout = (LinearLayout)findViewById(R.id.fullSizeCarLinearLayout);
         View.OnClickListener fullSizeCarlayoutListener = new View.OnClickListener() {
             @Override
@@ -66,6 +71,22 @@ public class CartypesActivity extends AppCompatActivity {
         };
         fullSizeCarLayout.setOnClickListener(fullSizeCarlayoutListener);
 
+        final ImageView fullSizeCarFavouriteView = (ImageView)findViewById(R.id.fullSizeFavouriteView);
+        fullSizeCarFavouriteView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(currState2){
+                    fullSizeCarFavouriteView.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+                    currState2 = false;
+                }else{
+                    fullSizeCarFavouriteView.setImageResource(R.drawable.ic_baseline_favorite_24_red);
+                    currState2 = true;
+                }
+            }
+        });
+
+        //getting the control of premiumCarLayout, when user clicks at any of the places, it will direct the user to CheckOutActivity page
         LinearLayout premiumSizeCarLayout = (LinearLayout)findViewById(R.id.premiumCarLinearLayout);
         View.OnClickListener premiumSizeCarlayoutListener = new View.OnClickListener() {
             @Override
@@ -82,6 +103,23 @@ public class CartypesActivity extends AppCompatActivity {
         };
         premiumSizeCarLayout.setOnClickListener(premiumSizeCarlayoutListener);
 
+        final ImageView premiumCarFavouriteView = (ImageView)findViewById(R.id.premiumFavouriteView);
+        premiumCarFavouriteView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(currState3){
+                    premiumCarFavouriteView.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+                    currState3 = false;
+                }else{
+                    premiumCarFavouriteView.setImageResource(R.drawable.ic_baseline_favorite_24_red);
+                    currState3= true;
+                }
+            }
+        });
+
+
+        //getting the control of luxuryCarLayout, when user clicks at any of the places, it will direct the user to CheckOutActivity page
         LinearLayout luxuryCarLayout = (LinearLayout)findViewById(R.id.luxuryCarLinearLayout);
         View.OnClickListener luxuryCarlayoutListener = new View.OnClickListener() {
             @Override
@@ -97,6 +135,22 @@ public class CartypesActivity extends AppCompatActivity {
             }
         };
        luxuryCarLayout.setOnClickListener(luxuryCarlayoutListener);
+
+        final ImageView luxuryCarFavouriteView = (ImageView)findViewById(R.id.luxuryFavouriteView);
+        luxuryCarFavouriteView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(currState4){
+                    luxuryCarFavouriteView.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+                    currState4 = false;
+                }else{
+                    luxuryCarFavouriteView.setImageResource(R.drawable.ic_baseline_favorite_24_red);
+                    currState4 = true;
+                }
+            }
+        });
+
 
     }
 }

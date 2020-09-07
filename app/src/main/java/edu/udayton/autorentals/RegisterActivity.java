@@ -32,6 +32,8 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        //tried connecting the application to firebase database using google-services.json file.
+
         firstName = (EditText)findViewById(R.id.editTextTextFirstName);
         lastName = (EditText)findViewById(R.id.editTextTextLastName);
         emailAddress = (EditText)findViewById(R.id.editTextTextEmailAddress);
@@ -45,6 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
         mDatabase = database.getReference("users");
         auth = FirebaseAuth.getInstance();
 
+        //once registered, moved to login page
         View.OnClickListener registerButtonViewListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,13 +58,14 @@ public class RegisterActivity extends AppCompatActivity {
                 String pw = password.getText().toString();
                 String conf_pw = password.getText().toString();
                 user = new User(fName, lName, em, confirmEm, pw, conf_pw);
-                registerUser(em, pw);
+                //registerUser(em, pw);
                 Intent myIntent = new Intent(RegisterActivity.this, LoginActivity.class);
                 startActivity(myIntent);
             }
         };
     registerButtonView.setOnClickListener(registerButtonViewListener);
 
+    //reloads the registration page
     View.OnClickListener cancelButtonViewListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {

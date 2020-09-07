@@ -32,10 +32,13 @@
     <string name="strightTruckTextVal">Straight Truck</string>
     <string name="hybridBikeTextVal">Hybrid/Comfort Bike</string>
     <string name="roadBikeTextVal">Road Bike</string>
-    <string name="timeTrailBiikeVal">Time-rail Bike</string>
+    <string name="timeTrailBiikeVal">Time-trail Bike</string>
     <string name="payNowButtonVal">pay now</string>
     <string name="payLaterButtonVal">pay later</string>
     <string name="cruiserBikeTextVal">Cruiser Bike</string>
+    <string name="bookingConfirmationTextVal">Your booking has been confirmed</string>
+    <string name="commentTextVal">please reach out to the nearest AutoRentals store to pick the vehicle</string>
+    <string name="confirmButtonVal">Confirm Booking</string>
 
     <string-array name="autoTypes">
         <item>cars</item>

@@ -16,6 +16,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        //if the user is new to this application, it asks the user to clicke "create one" to create an account.
         TextView registrationLinkView = (TextView)findViewById(R.id.registrationLinkView);
 
         View.OnTouchListener registrationLinkViewListener = new View.OnTouchListener() {
@@ -28,6 +29,7 @@ public class LoginActivity extends AppCompatActivity {
         };
         registrationLinkView.setOnTouchListener(registrationLinkViewListener);
 
+        // user clicks login to view the types of autos that are available
         Button login = (Button)findViewById(R.id.loginButtonView);
         View.OnClickListener loginOnClickListener = new View.OnClickListener() {
             @Override

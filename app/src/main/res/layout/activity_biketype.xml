@@ -10,7 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <LinearLayout
+            android:id="@+id/hybridBikeLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -22,20 +24,21 @@
                 android:layout_margin="10dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/hybrid_bike_small"
-                app:riv_corner_radius="10dp"/>
+                app:riv_corner_radius="10dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:layout_marginRight="10dp"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/hybridBikeFavouriteView"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_gravity="right"
-                    android:src= "@drawable/ic_baseline_favorite_border_24"/>
+                    android:src="@drawable/ic_baseline_favorite_border_24" />
 
                 <TextView
                     android:id="@+id/hybridBikeTextView"
@@ -52,13 +55,14 @@
                     android:layout_height="wrap_content"
                     android:text="@string/tillAugTextView"
                     android:textColor="@android:color/darker_gray" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="\u0024 24"
+                    android:textColor="@android:color/holo_red_light"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/holo_red_light"/>
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
         <View
@@ -67,7 +71,9 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@color/colorDivider" />
+
         <LinearLayout
+            android:id="@+id/roadBikeLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -79,20 +85,21 @@
                 android:layout_margin="10dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/road_bike_small"
-                app:riv_corner_radius="10dp"/>
+                app:riv_corner_radius="10dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:layout_marginRight="10dp"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/roadBikeFavouriteView"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_gravity="right"
-                    android:src= "@drawable/ic_baseline_favorite_border_24"/>
+                    android:src="@drawable/ic_baseline_favorite_border_24" />
 
                 <TextView
                     android:id="@+id/roadBikeTextView"
@@ -109,13 +116,14 @@
                     android:layout_height="wrap_content"
                     android:text="@string/tillAugTextView"
                     android:textColor="@android:color/darker_gray" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="\u0024 33"
+                    android:textColor="@android:color/holo_red_light"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/holo_red_light"/>
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
         <View
@@ -126,6 +134,7 @@
             android:background="@color/colorDivider" />
 
         <LinearLayout
+            android:id="@+id/timeRailBikeLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -137,20 +146,21 @@
                 android:layout_margin="10dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/time_trail_bike_small"
-                app:riv_corner_radius="10dp"/>
+                app:riv_corner_radius="10dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:layout_marginRight="10dp"
-                android:gravity="center_vertical">
+                android:gravity="center_vertical"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/timeTrailBikeFavouriteView"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:layout_gravity="right"
-                    android:src= "@drawable/ic_baseline_favorite_border_24"/>
+                    android:src="@drawable/ic_baseline_favorite_border_24" />
 
                 <TextView
                     android:id="@+id/timeTrailTextView"
@@ -167,13 +177,14 @@
                     android:layout_height="wrap_content"
                     android:text="@string/tillAugTextView"
                     android:textColor="@android:color/darker_gray" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="\u0024 42"
+                    android:textColor="@android:color/holo_red_light"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="@android:color/holo_red_light"/>
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

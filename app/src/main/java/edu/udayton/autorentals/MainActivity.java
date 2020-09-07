@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button startButtonView = (Button)findViewById(R.id.startButtonView);
 
+        //startButtonView on clicked migrates the page from main activity to login activity.
         View.OnClickListener startButtonClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {

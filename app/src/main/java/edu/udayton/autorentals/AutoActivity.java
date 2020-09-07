@@ -19,6 +19,7 @@ public class AutoActivity extends ListActivity {
         super.onCreate(savedInstanceState);
        //setContentView(R.layout.activity_auto);
 
+        //Listview of autotype from strings.xml is fetched and placed in "activity_out" file
         List<String> autoTypes = Arrays.asList(getResources().getStringArray(R.array.autoTypes));
        setListAdapter(new ArrayAdapter<String>(this, R.layout.activity_auto, R.id.autoTextView, autoTypes));
     }
@@ -29,18 +30,23 @@ public class AutoActivity extends ListActivity {
         Intent intent;
         switch (position){
             case 0:
+                //if List1 is clicked, it will direct to cartype_activity page
                 intent = new Intent(AutoActivity.this, CartypesActivity.class);
                 break;
             case 1:
+                //if List2 is clicked, it will direct to Trucktype_activity page
                 intent = new Intent(AutoActivity.this, TrucktypesActivity.class);
                 break;
             case 2:
+                //if List3 is clicked, it will direct to Motorbiketype_activity page
                 intent = new Intent(AutoActivity.this, MotorbiketypesActivity.class);
                 break;
             case 3:
+                //if List2 is clicked, it will direct to Biketype_activity page
                 intent = new Intent(AutoActivity.this, BiketypeActivity.class);
                 break;
             default:
+                //toast stating "Invalid choice made " will be displayed, if invalid choice was made
                 Toast myToast = Toast.makeText(AutoActivity.this, "Invalid choice made", Toast.LENGTH_LONG);
                 myToast.show();
                 intent = null;

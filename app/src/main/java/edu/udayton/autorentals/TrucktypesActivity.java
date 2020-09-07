@@ -5,15 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class TrucktypesActivity extends AppCompatActivity {
+
+    private Boolean currState1= false;
+    private Boolean currState2 = false;
+    private Boolean currState3 = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trucktypes);
 
+        //getting the control of semiTrailerTruckLayout, when user clicks at any of the places, it will direct the user to CheckOutActivity page
         LinearLayout semiTrailerTruckLayout = (LinearLayout)findViewById(R.id.semiTrailerLinearLayout);
         View.OnClickListener semiTrailerTruckLayoutListener = new View.OnClickListener() {
             @Override
@@ -29,6 +35,23 @@ public class TrucktypesActivity extends AppCompatActivity {
         };
         semiTrailerTruckLayout.setOnClickListener(semiTrailerTruckLayoutListener);
 
+        //user can click this image to make this item their favourite
+        final ImageView semiTrailerTruckFavouriteView = (ImageView)findViewById(R.id.semiTrailerTruckFavouriteView);
+        semiTrailerTruckFavouriteView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(currState1){
+                    semiTrailerTruckFavouriteView.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+                    currState1 = false;
+                }else{
+                    semiTrailerTruckFavouriteView.setImageResource(R.drawable.ic_baseline_favorite_24_red);
+                    currState1 = true;
+                }
+            }
+        });
+
+        //getting the control of flatBedTruckLayout, when user clicks at any of the places, it will direct the user to CheckOutActivity page
         LinearLayout flatBedTruckLayout = (LinearLayout)findViewById(R.id.flatBedTruckLinearLayout);
         View.OnClickListener flatBedTruckLayoutListener = new View.OnClickListener() {
             @Override
@@ -44,6 +67,23 @@ public class TrucktypesActivity extends AppCompatActivity {
         };
         flatBedTruckLayout.setOnClickListener(flatBedTruckLayoutListener);
 
+        //user can click this image to make this item their favourite
+        final ImageView flatBedTruckFavouriteView = (ImageView)findViewById(R.id.flatBedTruckFavouriteView);
+        flatBedTruckFavouriteView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(currState2){
+                    flatBedTruckFavouriteView.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+                    currState2 = false;
+                }else{
+                    flatBedTruckFavouriteView.setImageResource(R.drawable.ic_baseline_favorite_24_red);
+                    currState2 = true;
+                }
+            }
+        });
+
+        //getting the control of straightTruckLayout, when user clicks at any of the places, it will direct the user to CheckOutActivity page
         LinearLayout straightTruckLayout = (LinearLayout)findViewById(R.id.straightTruckLinearLayout);
         View.OnClickListener straightTruckLayoutListener = new View.OnClickListener() {
             @Override
@@ -58,5 +98,21 @@ public class TrucktypesActivity extends AppCompatActivity {
             }
         };
         straightTruckLayout.setOnClickListener(straightTruckLayoutListener);
+
+        //user can click this image to make this item their favourite
+        final ImageView straightTruckFavouriteView = (ImageView)findViewById(R.id.straightTruckFavouriteView);
+        straightTruckFavouriteView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(currState3){
+                    straightTruckFavouriteView.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+                    currState3 = false;
+                }else{
+                    straightTruckFavouriteView.setImageResource(R.drawable.ic_baseline_favorite_24_red);
+                    currState3 = true;
+                }
+            }
+        });
     }
 }
